@@ -1,0 +1,164 @@
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid red; */
+    background-color: #60abe7 ;
+}
+
+.container{
+    width: 100%;
+    height: 10%;
+/* border: 2px solid black; */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:transparent;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 90px;
+}
+nav .txt{
+    margin-left: 90px;
+}
+nav ul li{
+    margin: 15px;
+    list-style-type: none;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+nav ul button{
+    border-radius: 20px;
+    padding: 7px 15px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid rgb(17, 43, 61);
+    transition: all 0.6s;
+}
+
+
+nav ul button:hover{
+    background-color:  rgb(17, 43, 61);
+    box-shadow: 2px 2px 5px rgb(17, 43, 61);
+}
+
+.artical{
+    max-height: 80%;
+    width: 100%;
+    /* border: 2px soli d red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 30px;
+   padding-bottom: 50px;
+
+}
+
+.para{
+  width: 25%;
+  /* border: 2px solid red; */
+  margin-left: 100px;
+  color: #fff;
+}
+
+.para h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+.para h6{
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.para .btn{
+    padding: 7px 12px;
+    border-radius: 10px;    
+    margin-right: 20px;
+    border: 0px;
+    background-color:  rgb(64, 109, 141);
+color: #fff;
+display: inline;
+}
+
+.btn2{
+    border: none;
+    font-weight: bolder;
+    background-color: transparent   ;
+}
+
+.artical img{
+    margin-right: 90px;
+    border-radius: 10px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.footer :first-child:hover{
+color: rgba(255, 33, 144, 0.815);
+}
+.footer :nth-child(2):hover{
+color: rgb(69, 60, 194);
+}
+.footer :nth-child(3):hover{
+color: rgb(48, 42, 138);
+}
+.footer :nth-child(4):hover{
+color: rgb(0, 0, 0);
+}
+.footer :nth-child(5):hover{
+color: rgb(255, 0, 0);
+}
+
+@media only screen and (max-width:600px) {
+    .artical{
+      flex-direction: column;
+    }
+    .artical .para{
+        width: 70%;
+        margin: 50px;
+    }
+    .artical img{
+        border: 2px solid red;
+        width: 100%;
+        margin: 0 auto;
+        height: 200px;
+        text-align: center;
+    }
+    .container{
+        display: none;
+    }
+}
